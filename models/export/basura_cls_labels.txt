@@ -1,0 +1,7 @@
+general
+metal
+organico
+papel_carton
+peligroso
+plastico
+vidrio

@@ -1,0 +1,19 @@
+{
+  "modelo": "yolo26s-cls.pt",
+  "imgsz": 224,
+  "epochs_max": 100,
+  "patience": 20,
+  "batch": 64,
+  "workers": 2,
+  "cache": "ram",
+  "amp": false,
+  "seed": 42,
+  "deterministic": true,
+  "epocas_entrenadas": 59,
+  "mejor_epoca_val": 39,
+  "val_top1_mejor": 0.96327,
+  "tiempo_entrenamiento_s": 1639.6,
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "run": "runs/cls/yolo26s-cls",
+  "pesos_finales": "models/cls/yolo26s-cls.pt"
+}

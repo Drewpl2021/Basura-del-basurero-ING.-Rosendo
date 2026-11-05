@@ -1,0 +1,5 @@
+metal
+organico
+papel_carton
+plastico
+vidrio

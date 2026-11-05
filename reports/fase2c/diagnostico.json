@@ -1,0 +1,128 @@
+{
+ "clases": [
+  "plastico",
+  "papel_carton",
+  "vidrio",
+  "metal",
+  "organico",
+  "general",
+  "peligroso"
+ ],
+ "brecha": [
+  {
+   "modelo": "yolo26n-cls",
+   "top1_train": 0.999836038694868,
+   "loss_train": 0.0004875356680713594,
+   "top1_val": 0.9640397857689365,
+   "loss_val": 0.14894340932369232,
+   "top1_test": 0.9640672782874617,
+   "brecha_train_val_pp": 3.579625292593158,
+   "brecha_train_test_pp": 3.5768760407406286,
+   "epoca_best": 76,
+   "epoca_primer_max": 57,
+   "epoca_parada": 77,
+   "epoca_min_val_loss": 57,
+   "val_top1_best_epoch": 0.96404,
+   "train_loss_best_epoch": 0.02837,
+   "val_loss_best_epoch": 0.15093,
+   "val_loss_min": 0.13074,
+   "val_loss_ultima": 0.15069
+  },
+  {
+   "modelo": "yolo26s-cls",
+   "top1_train": 0.999344154779472,
+   "loss_train": 0.0036958528216928244,
+   "top1_val": 0.96327467482785,
+   "loss_val": 0.14064399898052216,
+   "top1_test": 0.9564220183486238,
+   "brecha_train_val_pp": 3.606947995162202,
+   "brecha_train_test_pp": 4.2922136430848195,
+   "epoca_best": 39,
+   "epoca_primer_max": 39,
+   "epoca_parada": 59,
+   "epoca_min_val_loss": 33,
+   "val_top1_best_epoch": 0.96327,
+   "train_loss_best_epoch": 0.06491,
+   "val_loss_best_epoch": 0.14337,
+   "val_loss_min": 0.1407,
+   "val_loss_ultima": 0.16418
+  }
+ ],
+ "fondos": [
+  {
+   "clase": "plastico",
+   "n": 603,
+   "pct_fondo_liso": 79.93366500829188,
+   "pct_fondo_blanco": 67.66169154228857,
+   "especular_medio": 16.205766102163683,
+   "saturacion_media": 0.1372693861144225
+  },
+  {
+   "clase": "papel_carton",
+   "n": 1346,
+   "pct_fondo_liso": 51.3372956909361,
+   "pct_fondo_blanco": 39.524517087667164,
+   "especular_medio": 6.391600686684905,
+   "saturacion_media": 0.21386835547120406
+  },
+  {
+   "clase": "vidrio",
+   "n": 1380,
+   "pct_fondo_liso": 76.8840579710145,
+   "pct_fondo_blanco": 68.40579710144927,
+   "especular_medio": 23.96279052201043,
+   "saturacion_media": 0.17331176226487752
+  },
+  {
+   "clase": "metal",
+   "n": 533,
+   "pct_fondo_liso": 75.60975609756098,
+   "pct_fondo_blanco": 63.789868667917446,
+   "especular_medio": 8.317797500436104,
+   "saturacion_media": 0.12628599596292275
+  },
+  {
+   "clase": "organico",
+   "n": 684,
+   "pct_fondo_liso": 26.900584795321635,
+   "pct_fondo_blanco": 22.076023391812864,
+   "especular_medio": 5.525227701998962,
+   "saturacion_media": 0.4012004929888797
+  },
+  {
+   "clase": "general",
+   "n": 897,
+   "pct_fondo_liso": 70.34559643255295,
+   "pct_fondo_blanco": 58.19397993311036,
+   "especular_medio": 26.45602033520194,
+   "saturacion_media": 0.14858199670729497
+  },
+  {
+   "clase": "peligroso",
+   "n": 656,
+   "pct_fondo_liso": 71.4939024390244,
+   "pct_fondo_blanco": 68.59756097560977,
+   "especular_medio": 23.466761495859924,
+   "saturacion_media": 0.09270731230937444
+  }
+ ],
+ "plastico_sin_brillo": {
+  "n_aciertos_originales": 115,
+  "sin_reflejos_destino_pct": {
+   "plastico": 98.3,
+   "vidrio": 1.7
+  },
+  "mate_destino_pct": {
+   "plastico": 68.7,
+   "vidrio": 15.7,
+   "metal": 7.8,
+   "papel_carton": 4.3,
+   "general": 1.7,
+   "peligroso": 1.7
+  }
+ },
+ "conf_test_n": {
+  "mediana": 1.0,
+  "pct_mayor_60": 98.70030581039755
+ }
+}

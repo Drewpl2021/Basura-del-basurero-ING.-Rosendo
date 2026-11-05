@@ -1,0 +1,95 @@
+{
+  "modelo": "yolo26s-cls",
+  "split": "test",
+  "n_imagenes": 1308,
+  "top1": 0.9564220183486238,
+  "top5": 1.0,
+  "balanced_accuracy": 0.9470330359414098,
+  "kappa": 0.9478761320560809,
+  "mcc": 0.9479143808925157,
+  "macro_f1": 0.949657450262385,
+  "roc_auc_macro_ovr": 0.9973650860529172,
+  "top1_ic95": [
+    0.9457186544342507,
+    0.9671253822629969
+  ],
+  "macro_f1_ic95": [
+    0.9368931402809937,
+    0.9619189762472469
+  ],
+  "roc_auc_por_clase": {
+    "plastico": 0.9913209854626506,
+    "papel_carton": 0.9992427612388833,
+    "vidrio": 0.9978234163016773,
+    "metal": 0.9949675276969643,
+    "organico": 0.9995195321884137,
+    "general": 0.999355958781362,
+    "peligroso": 0.9993254207004686
+  },
+  "pares_mas_confundidos": [
+    {
+      "real": "plastico",
+      "predicha": "vidrio",
+      "n": 7
+    },
+    {
+      "real": "metal",
+      "predicha": "plastico",
+      "n": 5
+    },
+    {
+      "real": "vidrio",
+      "predicha": "plastico",
+      "n": 4
+    },
+    {
+      "real": "plastico",
+      "predicha": "papel_carton",
+      "n": 3
+    },
+    {
+      "real": "plastico",
+      "predicha": "general",
+      "n": 3
+    }
+  ],
+  "atajo_general": {
+    "clothes": {
+      "n": 45,
+      "accuracy": 0.9777777777777777,
+      "predicciones": {
+        "general": 44,
+        "papel_carton": 1
+      }
+    },
+    "shoes": {
+      "n": 45,
+      "accuracy": 0.9777777777777777,
+      "predicciones": {
+        "general": 44,
+        "organico": 1
+      }
+    },
+    "trash": {
+      "n": 102,
+      "accuracy": 0.9803921568627451,
+      "predicciones": {
+        "general": 100,
+        "organico": 1,
+        "plastico": 1
+      }
+    }
+  },
+  "atajo_sospechoso": false,
+  "ms_gpu_total": 8.124824500014256,
+  "ms_gpu_inferencia": 5.530501499988532,
+  "ms_cpu_total": 20.28808050002681,
+  "ms_cpu_inferencia": 17.063509500062537,
+  "cpu_hilos_torch": 8,
+  "parametros": 5451975,
+  "gflops": 1.488228096,
+  "tamano_mb": 10.529481887817383,
+  "epocas_entrenadas": 59,
+  "mejor_epoca_val": 39,
+  "tiempo_entrenamiento_min": 27.326666666666664
+}

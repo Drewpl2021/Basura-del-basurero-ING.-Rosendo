@@ -1,0 +1,86 @@
+{
+  "modelo": "yolo26n-cls (tflite_fp16)",
+  "split": "test",
+  "n_imagenes": 1308,
+  "top1": 0.9640672782874617,
+  "top5": 1.0,
+  "balanced_accuracy": 0.9594269283831611,
+  "kappa": 0.9570704919337831,
+  "mcc": 0.9571059276722917,
+  "macro_f1": 0.9593505430717519,
+  "roc_auc_macro_ovr": 0.9982387389287529,
+  "top1_ic95": [
+    0.9533639143730887,
+    0.9740061162079511
+  ],
+  "macro_f1_ic95": [
+    0.9471760330395089,
+    0.9699922148515584
+  ],
+  "roc_auc_por_clase": {
+    "plastico": 0.99376688955954,
+    "papel_carton": 0.9995483732949394,
+    "vidrio": 0.9982807659438095,
+    "metal": 0.9974947838608246,
+    "organico": 0.9998886720924374,
+    "general": 0.9993419578853047,
+    "peligroso": 0.9993497298644156
+  },
+  "pares_mas_confundidos": [
+    {
+      "real": "plastico",
+      "predicha": "general",
+      "n": 4
+    },
+    {
+      "real": "papel_carton",
+      "predicha": "general",
+      "n": 4
+    },
+    {
+      "real": "vidrio",
+      "predicha": "metal",
+      "n": 4
+    },
+    {
+      "real": "metal",
+      "predicha": "vidrio",
+      "n": 4
+    },
+    {
+      "real": "plastico",
+      "predicha": "papel_carton",
+      "n": 3
+    }
+  ],
+  "atajo_general": {
+    "clothes": {
+      "n": 45,
+      "accuracy": 1.0,
+      "predicciones": {
+        "general": 45
+      }
+    },
+    "shoes": {
+      "n": 45,
+      "accuracy": 0.9777777777777777,
+      "predicciones": {
+        "general": 44,
+        "organico": 1
+      }
+    },
+    "trash": {
+      "n": 102,
+      "accuracy": 0.9705882352941176,
+      "predicciones": {
+        "general": 99,
+        "peligroso": 2,
+        "organico": 1
+      }
+    }
+  },
+  "atajo_sospechoso": false,
+  "tamano_mb": 2.974728584289551,
+  "ms_cpu_total": 19.910851000004186,
+  "ms_cpu_inferencia": 14.935936500041862
+}

@@ -1,0 +1,16 @@
+split,clase,imagenes,cajas
+train,metal,1327,3730
+train,organico,1421,14215
+train,papel_carton,2253,6021
+train,plastico,1001,3306
+train,vidrio,1855,4428
+val,metal,277,858
+val,organico,304,2895
+val,papel_carton,487,1181
+val,plastico,223,670
+val,vidrio,401,1021
+test,metal,281,752
+test,organico,308,3162
+test,papel_carton,487,1343
+test,plastico,219,711
+test,vidrio,403,1013

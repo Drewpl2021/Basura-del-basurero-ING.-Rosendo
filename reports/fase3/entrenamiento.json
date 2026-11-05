@@ -1,0 +1,20 @@
+{
+  "modelo": "yolo26n.pt",
+  "imgsz": 416,
+  "epochs_max": 40,
+  "patience": 10,
+  "batch": 8,
+  "workers": 2,
+  "cache": "disk",
+  "amp": false,
+  "seed": 42,
+  "deterministic": true,
+  "epocas_entrenadas": 40,
+  "mejor_epoca_val_map50_95": 40,
+  "val_map50_95_mejor": 0.54017,
+  "val_map50_mejor_epoca": 0.74267,
+  "tiempo_entrenamiento_s": 6405.6,
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "run": "runs/det/yolo26n",
+  "pesos_finales": "models/det/yolo26n.pt"
+}

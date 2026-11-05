@@ -1,0 +1,4 @@
+variante,top1,macro_f1,dif_top1_pts,predicciones_distintas,max_dif_prob,media_dif_prob,mb,ms_cpu,ms_cpu_inferencia
+pt,0.96407,0.95935,0.00000,0,0.00000,0.00000,3.05524,12.54653,8.33765
+tflite_fp32,0.96407,0.95935,0.00000,0,0.00001,0.00000,5.89364,20.04037,15.15429
+tflite_fp16,0.96407,0.95935,0.00000,0,0.01760,0.00009,2.97473,19.91085,14.93594

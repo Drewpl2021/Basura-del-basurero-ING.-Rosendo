@@ -1,0 +1,62 @@
+{
+ "tflite_fp32": {
+  "task": "detect",
+  "names": {
+   "0": "metal",
+   "1": "organico",
+   "2": "papel_carton",
+   "3": "plastico",
+   "4": "vidrio"
+  },
+  "imgsz": [
+   416,
+   416
+  ],
+  "end2end": false,
+  "names_ok": true,
+  "entrada": [
+   1,
+   416,
+   416,
+   3
+  ],
+  "salida": [
+   1,
+   9,
+   3549
+  ],
+  "tipo_salida": "float32",
+  "max_coordenada": 210.53585815429688,
+  "max_score": 0.9418430328369141
+ },
+ "tflite_fp16": {
+  "task": "detect",
+  "names": {
+   "0": "metal",
+   "1": "organico",
+   "2": "papel_carton",
+   "3": "plastico",
+   "4": "vidrio"
+  },
+  "imgsz": [
+   416,
+   416
+  ],
+  "end2end": false,
+  "names_ok": true,
+  "entrada": [
+   1,
+   416,
+   416,
+   3
+  ],
+  "salida": [
+   1,
+   9,
+   3549
+  ],
+  "tipo_salida": "float32",
+  "max_coordenada": 210.52699279785156,
+  "max_score": 0.9418483972549438
+ }
+}

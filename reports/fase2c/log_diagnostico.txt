@@ -1,0 +1,113 @@
+{
+ "modelo": "yolo26n-cls",
+ "top1_train": 0.999836038694868,
+ "loss_train": 0.0004875356680713594,
+ "top1_val": 0.9640397857689365,
+ "loss_val": 0.14894340932369232,
+ "top1_test": 0.9640672782874617,
+ "brecha_train_val_pp": 3.579625292593158,
+ "brecha_train_test_pp": 3.5768760407406286,
+ "epoca_best": 76,
+ "epoca_primer_max": 57,
+ "epoca_parada": 77,
+ "epoca_min_val_loss": 57,
+ "val_top1_best_epoch": 0.96404,
+ "train_loss_best_epoch": 0.02837,
+ "val_loss_best_epoch": 0.15093,
+ "val_loss_min": 0.13074,
+ "val_loss_ultima": 0.15069
+}
+{
+ "modelo": "yolo26s-cls",
+ "top1_train": 0.999344154779472,
+ "loss_train": 0.0036958528216928244,
+ "top1_val": 0.96327467482785,
+ "loss_val": 0.14064399898052216,
+ "top1_test": 0.9564220183486238,
+ "brecha_train_val_pp": 3.606947995162202,
+ "brecha_train_test_pp": 4.2922136430848195,
+ "epoca_best": 39,
+ "epoca_primer_max": 39,
+ "epoca_parada": 59,
+ "epoca_min_val_loss": 33,
+ "val_top1_best_epoch": 0.96327,
+ "train_loss_best_epoch": 0.06491,
+ "val_loss_best_epoch": 0.14337,
+ "val_loss_min": 0.1407,
+ "val_loss_ultima": 0.16418
+}
+                 n  pct_fondo_liso  pct_fondo_blanco  especular_medio  saturacion_media
+clase                                                                                  
+plastico       603            79.9              67.7             16.2               0.1
+papel_carton  1346            51.3              39.5              6.4               0.2
+vidrio        1380            76.9              68.4             24.0               0.2
+metal          533            75.6              63.8              8.3               0.1
+organico       684            26.9              22.1              5.5               0.4
+general        897            70.3              58.2             26.5               0.1
+peligroso      656            71.5              68.6             23.5               0.1
+                fondo_liso  fondo_blanco
+clase_original                          
+battery               71.5          68.6
+biological            26.9          22.1
+brown-glass           72.8          67.8
+cardboard             64.8          43.6
+clothes               42.4          12.9
+green-glass           72.1          64.4
+metal                 75.6          63.8
+paper                 39.9          36.0
+plastic               79.9          67.7
+shoes                 59.0          50.5
+trash                 87.6          81.6
+white-glass           83.8          71.9
+     modelo                       entrada     predicha  confianza  entropia_norm
+yolo26n-cls                  liso: blanco      general      0.810          0.374
+yolo26n-cls                   liso: negro      general      0.950          0.130
+yolo26n-cls              liso: gris pared      general      0.861          0.303
+yolo26n-cls             liso: beige pared papel_carton      0.986          0.044
+yolo26n-cls              liso: piel clara papel_carton      0.989          0.035
+yolo26n-cls              liso: piel media papel_carton      0.949          0.113
+yolo26n-cls             liso: piel oscura papel_carton      0.854          0.236
+yolo26n-cls             liso: madera mesa papel_carton      0.928          0.149
+yolo26n-cls                    liso: azul      general      0.932          0.144
+yolo26n-cls                degradado gris       vidrio      0.948          0.114
+yolo26n-cls               ruido gaussiano papel_carton      0.998          0.007
+yolo26n-cls                textura madera        metal      0.909          0.194
+yolo26n-cls                 piso baldosas       vidrio      0.968          0.086
+yolo26n-cls foto: zidane.jpg (2 personas)      general      0.853          0.319
+yolo26n-cls         foto: bus.jpg (calle) papel_carton      0.988          0.035
+yolo26n-cls   recorte: cara/piel (zidane) papel_carton      0.965          0.094
+yolo26n-cls recorte: camisa/mano (zidane)      general      0.903          0.166
+yolo26s-cls                  liso: blanco      general      0.342          0.859
+yolo26s-cls                   liso: negro      general      0.316          0.859
+yolo26s-cls              liso: gris pared      general      0.348          0.850
+yolo26s-cls             liso: beige pared      general      0.320          0.854
+yolo26s-cls              liso: piel clara      general      0.293          0.850
+yolo26s-cls              liso: piel media      general      0.296          0.847
+yolo26s-cls             liso: piel oscura      general      0.300          0.847
+yolo26s-cls             liso: madera mesa      general      0.305          0.845
+yolo26s-cls                    liso: azul       vidrio      0.341          0.842
+yolo26s-cls                degradado gris       vidrio      0.407          0.856
+yolo26s-cls               ruido gaussiano     plastico      0.318          0.767
+yolo26s-cls                textura madera papel_carton      0.924          0.195
+yolo26s-cls                 piso baldosas       vidrio      0.382          0.896
+yolo26s-cls foto: zidane.jpg (2 personas)      general      0.969          0.080
+yolo26s-cls         foto: bus.jpg (calle) papel_carton      0.989          0.037
+yolo26s-cls   recorte: cara/piel (zidane) papel_carton      0.929          0.159
+yolo26s-cls recorte: camisa/mano (zidane)      general      0.999          0.004
+{
+ "n_aciertos_originales": 115,
+ "sin_reflejos_destino_pct": {
+  "plastico": 98.3,
+  "vidrio": 1.7
+ },
+ "mate_destino_pct": {
+  "plastico": 68.7,
+  "vidrio": 15.7,
+  "metal": 7.8,
+  "papel_carton": 4.3,
+  "general": 1.7,
+  "peligroso": 1.7
+ }
+}
+
+Guardado en reports\fase2c

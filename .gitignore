@@ -1,0 +1,23 @@
+# Se sube solo la documentación y los modelos finales (lista blanca).
+# Datos, entornos, runs, logs y la app quedan fuera del repositorio.
+/*
+!/.gitignore
+!/README.md
+!/reports/
+!/models/
+
+# Captura de la pantalla de bloqueo del celular (no documenta nada)
+/reports/fase4a/capturas/04_wake.png
+
+# Modelos: solo los pesos finales (.pt) y los TFLite que usa la app
+/models/*
+!/models/export/
+!/models/det/
+!/models/cls/
+/models/export/*
+!/models/export/basura_*
+/models/det/*
+!/models/det/yolo26n.pt
+/models/cls/*
+!/models/cls/yolo26n-cls.pt
+!/models/cls/yolo26s-cls.pt
